@@ -1,0 +1,136 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("images/img.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.wrapper{
+    width: 515px;
+    // padding: 15px;
+    // background: red;
+    margin: 0 auto;
+    position: relative;
+    // background: red;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    header{
+        
+        height: 100px;
+        // background: blue;
+        // margin-bottom: 20px;
+        
+    }
+    .main-body{
+        min-height: 100px;
+        width: 380px;
+        // background: yellow;
+        margin: 0 auto;
+        
+
+        a{
+            text-decoration: none;
+            color: #FF4F81;
+        }
+        a:hover{
+           color: #3BE8B0;
+           text-decoration: underline;
+        }
+        .inp{
+
+            width: calc(100% - 30px);
+            padding: 11px 15px;
+            border: none;
+            border-radius: 10rem;
+            margin-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(rgba(150,150,150,0.5));
+            color: white;
+            font-size: 12pt;
+            outline: none;
+
+
+        }
+        .inp::placeholder{
+            color: white;
+        }
+
+        .check{
+            margin-bottom: 30px;
+        }
+        .btn{
+            .lgnbtn{
+            width: 100%;
+            padding: 9px 15px;
+            border: none;
+            border-radius: 10rem;
+            // margin-top: 5500px;
+            text-align: center;
+            margin-top: 20px;
+            background: #3BE8B0;
+            color: white;
+            }
+            .lgnbtn:hover{
+                background:#FF4F81;
+            }
+
+            
+
+        }
+        .lnk{
+            margin-top: 15px;
+        }
+
+    }
+    footer{
+        height: 100px;
+        // background: darkorchid;
+        margin-top: 40px;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: #3BE8B0;
+            
+         }
+    }
+    
+}
+
+//  MEDIA.....................
+ @media (max-width: 575px){
+    .wrapper{
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        top: 0;
+        transform: translateY(0);
+        min-height: 100%;
+        overflow: hidden;
+        header{
+        
+            margin-top: 50px;
+            
+        }
+        .main-body{
+            // min-height: 100px;
+            width: 100%;
+            // background: yellow;
+            // margin: 0 auto;
+        }
+    }
+
+
+ }
+
+
